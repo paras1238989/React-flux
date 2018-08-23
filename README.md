@@ -1,9 +1,10 @@
-##What is FLUX?
+## What is FLUX?
 
 Flux is an architecture for creating data layers in JavaScript applications. It was designed at Facebook along with the React view library. It places a focus on creating explicit and understandable update paths for your application's data, which makes tracing changes during development simpler and makes bugs easier to track down and fix.
 
 
-##Sample flux diagram
+## Sample flux diagram
+
 http://fluxxor.com/images/flux-simple.png
 
 Flux eschews this design in favor of a one-way data flow. All user interactions within a view call an action creator, which causes an action event to be emitted from a singleton dispatcher. The dispatcher is a single-point-of-emission for all actions in a flux application. The action is sent from the dispatcher to stores, which update themselves in response to the action.
